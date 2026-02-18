@@ -8,8 +8,7 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  basePath: '/devPortfolio',
-  assetPrefix: '/devPortfolio/',
+  basePath: process.env.NODE_ENV === 'production' ? '/devPortfolio' : '',
   images: {
     remotePatterns: [
       {

@@ -14,11 +14,11 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export default function ProjectsPage() {
   const { t } = useAppContext();
-  const projectsPath = "/images/";
+
   const projectsList = projectsData.projectsList.map(project => ({
-  ...project,
-  image: PlaceHolderImages.find(img => img.id === `project${projectsData.projectsList.indexOf(project) + 1}`)?.imageUrl || ""
-}));
+    ...project,
+    image: PlaceHolderImages.find(img => img.id === `project${projectsData.projectsList.indexOf(project) + 1}`)?.imageUrl || ""
+  }));
 
   return (
     <div className="container mx-auto px-4 py-20">
@@ -34,7 +34,7 @@ export default function ProjectsPage() {
           <Card key={i} className="group overflow-hidden border bg-card hover:shadow-xl transition-all duration-300">
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
-                src={projectsPath + project.image}
+                src={project.image}
                 alt={t.projects[`project${i + 1}desc${i + 1}` as keyof typeof t.projects]}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -49,12 +49,12 @@ export default function ProjectsPage() {
                     <Github className="w-5 h-5" />
                   </Link>
                 )}
-                 {project.android && (
+                {project.android && (
                   <Link href={project.android} target="_blank" className="p-3 bg-white rounded-full text-primary hover:text-secondary transition-colors">
                     <AndroidSVG className="w-5 h-5" />
                   </Link>
                 )}
-                  {project.ios && (
+                {project.ios && (
                   <Link href={project.ios} target="_blank" className="p-3 bg-white rounded-full text-primary hover:text-secondary transition-colors">
                     <IOSSVG className="w-5 h-5" />
                   </Link>
@@ -89,7 +89,7 @@ export default function ProjectsPage() {
                 ))}
               </div>
             </CardContent>
-     
+
           </Card>
         ))}
       </div>
