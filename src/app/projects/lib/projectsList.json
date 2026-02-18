@@ -1,22 +1,16 @@
 {
     "projectsList":[
   {
-
-   
-
     "tags": ["React", "TypeScript", "Tailwind", "D3.js"],
     "live": "https://example.com",
     "github": "https://github.com"
   },
   {
-   
-
     "tags": ["Objective-C", "Xcode", "iOS"],
     "live": "https://example.com",
     "github": "https://github.com"
   },
   {
-    
     "tags": ["React Native", "Firebase", "GenAI", "Node.js"],
     "live": "https://example.com",
     "github": "https://github.com"

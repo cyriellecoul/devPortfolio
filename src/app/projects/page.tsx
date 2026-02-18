@@ -11,7 +11,6 @@ import { useAppContext } from "@/context/app-context";
 import { projectsList } from "./lib/projectsList.json";
 
 
-
 export default function ProjectsPage() {
   const { t } = useAppContext();
   const profileImg = PlaceHolderImages.find(img => img.id === "profile")?.imageUrl || "";
