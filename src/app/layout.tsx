@@ -6,8 +6,6 @@ import { Footer } from '@/components/footer';
 import { Toaster } from '@/components/ui/toaster';
 import { AppContextProvider } from '@/context/app-context';
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://cyriellecoul.github.io/devPorfolio"),
   title: 'Cyrielle | Développeuse Frontend & Mobile',
