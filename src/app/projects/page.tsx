@@ -14,6 +14,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export default function ProjectsPage() {
   const { t } = useAppContext();
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
   const projectsList = projectsData.projectsList.map(project => ({
     ...project,
@@ -34,7 +35,7 @@ export default function ProjectsPage() {
           <Card key={i} className="group overflow-hidden border bg-card hover:shadow-xl transition-all duration-300">
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
-                src={project.image}
+                src={`${basePath}${project.image}`}
                 alt={t.projects[`project${i + 1}desc${i + 1}` as keyof typeof t.projects]}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
