@@ -4,18 +4,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink, Github } from "lucide-react";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { useAppContext } from "@/context/app-context";
 import projectsData from "./lib/projectsList.json";
+import AndroidSVG from "./lib/android";
+import IOSSVG from "./lib/ios";
 
 const projectsList = projectsData.projectsList;
 
-
 export default function ProjectsPage() {
   const { t } = useAppContext();
-  const profileImg = PlaceHolderImages.find(img => img.id === "profile")?.imageUrl || "";
+  const projectsPath = "/images/";
+
   return (
     <div className="container mx-auto px-4 py-20">
       <div className="text-center mb-16 max-w-2xl mx-auto">
@@ -30,7 +31,7 @@ export default function ProjectsPage() {
           <Card key={i} className="group overflow-hidden border bg-card hover:shadow-xl transition-all duration-300">
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
-                src={profileImg}
+                src={projectsPath + project.image}
                 alt={t.projects[`project${i + 1}desc${i + 1}` as keyof typeof t.projects]}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -40,9 +41,21 @@ export default function ProjectsPage() {
                 <Link href={project.live} target="_blank" className="p-3 bg-white rounded-full text-primary hover:text-secondary transition-colors">
                   <ExternalLink className="w-5 h-5" />
                 </Link>
-                <Link href={project.github} target="_blank" className="p-3 bg-white rounded-full text-primary hover:text-secondary transition-colors">
-                  <Github className="w-5 h-5" />
-                </Link>
+                {project.github && (
+                  <Link href={project.github} target="_blank" className="p-3 bg-white rounded-full text-primary hover:text-secondary transition-colors">
+                    <Github className="w-5 h-5" />
+                  </Link>
+                )}
+                 {project.android && (
+                  <Link href={project.android} target="_blank" className="p-3 bg-white rounded-full text-primary hover:text-secondary transition-colors">
+                    <AndroidSVG className="w-5 h-5" />
+                  </Link>
+                )}
+                  {project.ios && (
+                  <Link href={project.ios} target="_blank" className="p-3 bg-white rounded-full text-primary hover:text-secondary transition-colors">
+                    <IOSSVG className="w-5 h-5" />
+                  </Link>
+                )}
               </div>
             </div>
             <CardHeader className="pb-2">
@@ -73,11 +86,7 @@ export default function ProjectsPage() {
                 ))}
               </div>
             </CardContent>
-            <CardFooter className="pt-0 flex justify-end gap-4">
-              <Link href={project.live} className="text-xs font-bold uppercase tracking-widest text-primary flex items-center gap-1 hover:text-secondary transition-colors">
-                {t.projects.caseStudy} <ArrowRight className="w-3 h-3" />
-              </Link>
-            </CardFooter>
+     
           </Card>
         ))}
       </div>

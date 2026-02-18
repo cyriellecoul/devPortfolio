@@ -1,18 +1,53 @@
 {
-    "projectsList":[
-  {
-    "tags": ["React", "TypeScript", "Tailwind", "D3.js"],
-    "live": "https://example.com",
-    "github": "https://github.com"
-  },
-  {
-    "tags": ["Objective-C", "Xcode", "iOS"],
-    "live": "https://example.com",
-    "github": "https://github.com"
-  },
-  {
-    "tags": ["React Native", "Firebase", "GenAI", "Node.js"],
-    "live": "https://example.com",
-    "github": "https://github.com"
-  }
-]}
+  "projectsList": [
+    {
+      "tags": [
+        "Objective-C",
+        "Java",
+        "Xcode",
+        "Android Studio",
+        "iOS",
+        "Android",
+        "Android SDK",
+        "Node.js"
+      ],
+      "live": "https://mphase.ca/",
+      "github": "",
+      "image": "mTransport_app_bleu.webp",
+      "android": "https://play.google.com/store/apps/details?id=ca.mphase.mtransport_driver&pcampaignid=web_share",
+      "ios": "https://apps.apple.com/ca/app/mtransport-driver/id1273216576"
+    },
+    {
+      "tags": [
+        "React Native",
+        "Objective-C",
+        "Java",
+        "Xcode",
+        "Android Studio",
+        "iOS",
+        "Android",
+        "Node.js"
+      ],
+      "live": "https://github.com/cyriellecoul/portfolio2025",
+      "github": "",
+      "image": "mTransport_app_vert.webp",
+      "android": "https://play.google.com/store/apps/details?id=ca.mphase.mtransport&pcampaignid=web_share",
+      "ios": "https://apps.apple.com/ca/app/mtransport-parent/id1152483902"
+    },
+    {
+      "tags": [
+        "Angular",
+        "Javascript",
+        "HTML",
+        "CSS",
+        "Node.js",
+        "API REST"
+      ],
+      "live": "https://portail.mtransport.ca/#!/",
+      "github": "",
+      "image": "mTransport_app_orange.webp",
+      "android": "",
+      "ios": ""
+    }
+  ]
+}

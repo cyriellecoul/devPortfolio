@@ -6,29 +6,29 @@ import { Footer } from '@/components/footer';
 import { Toaster } from '@/components/ui/toaster';
 import { AppContextProvider } from '@/context/app-context';
 
-export const metadata: Metadata = {
-  // TODO: Update the URL
-  metadataBase: new URL("https://cyriellecoul.github.io/TODO"),
-   title: 'Cyrielle | Développeuse Frontend & Mobile',
-  description: 'Portfolio de Cyrielle, Développeuse Front-End & Mobile en React, JavaScript et TypeScript, avec une solide expérience en développement natif Android (Java) et iOS (Objective-C), ainsi qu’en React Native. Découvrez mes projets et compétences dans le développement web et mobile.',
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
+export const metadata: Metadata = {
+  metadataBase: new URL("https://cyriellecoul.github.io/devPorfolio"),
+  title: 'Cyrielle | Développeuse Frontend & Mobile',
+  description: 'Portfolio de Cyrielle, Développeuse Front-End & Mobile en React, JavaScript et TypeScript, avec une solide expérience en développement natif Android (Java) et iOS (Objective-C), ainsi qu’en React Native. Découvrez mes projets et compétences dans le développement web et mobile.',
   openGraph: {
-  title: "Portfolio de Cyrielle",
-  description: "Développeuse Frontend & Mobile",
-  url: "https://cyriellecoul.github.io/devPortfolio/",
-  siteName: "Portfolio de Cyrielle",
-  images: [
-    {
-      url: "/image_open_graph.png",
-      width: 1050,
-      height: 600,
-      alt: "Portfolio de Cyrielle",
-    },
-  ],
-  locale: "fr_FR",
-  type: "website",
+    title: "Portfolio de Cyrielle",
+    description: "Développeuse Frontend & Mobile",
+    url: "https://cyriellecoul.github.io/devPorfolio/",
+    siteName: "Portfolio de Cyrielle",
+    images: [
+      {
+        url: "/images/image_open_graph.png",
+        width: 1050,
+        height: 600,
+        alt: "Portfolio de Cyrielle",
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
   },
-}
+};
 
 
 export default function RootLayout({
