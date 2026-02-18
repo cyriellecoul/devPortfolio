@@ -8,7 +8,9 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "@/components/ui/badge";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { useAppContext } from "@/context/app-context";
-import { projectsList } from "./lib/projectsList.json";
+import projectsData from "./lib/projectsList.json";
+
+const projectsList = projectsData.projectsList;
 
 
 export default function ProjectsPage() {
