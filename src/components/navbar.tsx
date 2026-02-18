@@ -54,6 +54,7 @@ export function Navbar() {
               size="icon"
               onClick={toggleTheme}
               className="rounded-full text-muted-foreground hover:text-primary"
+              aria-label={theme === 'dark' ? "Switch to light theme" : "Switch to dark theme"}
             >
               {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </Button>
@@ -63,7 +64,7 @@ export function Navbar() {
               size="icon"
               onClick={toggleLang}
               className="rounded-full text-muted-foreground hover:text-primary"
-                title={lang === 'fr' ? 'English' : 'Français'}
+              title={lang === 'fr' ? 'English' : 'Français'}
               aria-label={lang === 'fr' ? "Changer la langue en anglais" : "Change language to French"}
             >
              {lang === 'fr' ? 'EN' : 'FR'}</Button>
