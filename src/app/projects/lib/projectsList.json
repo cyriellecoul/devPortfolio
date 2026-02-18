@@ -13,7 +13,6 @@
       ],
       "live": "https://mphase.ca/",
       "github": "",
-      "image": "mTransport_app_bleu.webp",
       "android": "https://play.google.com/store/apps/details?id=ca.mphase.mtransport_driver&pcampaignid=web_share",
       "ios": "https://apps.apple.com/ca/app/mtransport-driver/id1273216576"
     },
@@ -30,7 +29,6 @@
       ],
       "live": "https://github.com/cyriellecoul/portfolio2025",
       "github": "",
-      "image": "mTransport_app_vert.webp",
       "android": "https://play.google.com/store/apps/details?id=ca.mphase.mtransport&pcampaignid=web_share",
       "ios": "https://apps.apple.com/ca/app/mtransport-parent/id1152483902"
     },
@@ -45,7 +43,6 @@
       ],
       "live": "https://portail.mtransport.ca/#!/",
       "github": "",
-      "image": "mTransport_app_orange.webp",
       "android": "",
       "ios": ""
     }

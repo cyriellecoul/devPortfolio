@@ -10,12 +10,15 @@ import { useAppContext } from "@/context/app-context";
 import projectsData from "./lib/projectsList.json";
 import AndroidSVG from "./lib/android";
 import IOSSVG from "./lib/ios";
-
-const projectsList = projectsData.projectsList;
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export default function ProjectsPage() {
   const { t } = useAppContext();
   const projectsPath = "/images/";
+  const projectsList = projectsData.projectsList.map(project => ({
+  ...project,
+  image: PlaceHolderImages.find(img => img.id === `project${projectsData.projectsList.indexOf(project) + 1}`)?.imageUrl || ""
+}));
 
   return (
     <div className="container mx-auto px-4 py-20">

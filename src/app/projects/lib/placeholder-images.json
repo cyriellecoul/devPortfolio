@@ -1,23 +1,23 @@
 
 {
   "placeholderImages": [
-    {
+      {
       "id": "project1",
-      "description": "E-commerce Platform Project",
-      "imageUrl": "https://picsum.photos/seed/project1/800/600",
-      "imageHint": "ecommerce website dashboard"
+      "description": "Profile image placeholder",
+      "imageUrl": "/mTransport_app_bleu.webp",
+      "imageHint": "A placeholder image for the mtransport driver app, featuring a simple silhouette of a person on a neutral background."
     },
-    {
+      {
       "id": "project2",
-      "description": "AI Analytics Dashboard",
-      "imageUrl": "https://picsum.photos/seed/project2/800/600",
-      "imageHint": "data visualization dashboard"
+      "description": "Profile image placeholder",
+      "imageUrl": "/mTransport_app_vert.webp",
+      "imageHint": "A placeholder image for the mtransport parent app, featuring a simple silhouette of a person on a neutral background."
     },
-    {
+      {
       "id": "project3",
-      "description": "Sustainable Tech App",
-      "imageUrl": "https://picsum.photos/seed/project3/800/600",
-      "imageHint": "mobile app green technology"
+      "description": "Profile image placeholder",
+      "imageUrl": "/mTransport_app_orange.webp",
+      "imageHint": "A placeholder image for the mtransport portal, featuring a simple silhouette of a person on a neutral background."
     }
   ]
 }
