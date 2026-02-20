@@ -2,27 +2,39 @@
   "placeholderImages": [
     {
       "id": "profile",
-      "description": "Profile image placeholder",
+      "description": "Profile of developer",
       "imageUrl": "/profile-image.png",
       "imageHint": "A placeholder image for the profile picture"
     },
     {
       "id": "project1",
-      "description": "Project 1 image placeholder",
+      "description": "Project 1 image of mtransport driver logo",
       "imageUrl": "/mTransport_app_bleu.webp",
       "imageHint": "A placeholder image for project 1"
     },
     {
       "id": "project2",
-      "description": "Project 2 image placeholder",
+      "description": "Project 2 image of mtransport parent logo",
       "imageUrl": "/mTransport_app_vert.webp",
       "imageHint": "A placeholder image for project 2"
     },
     {
       "id": "project3",
-      "description": "Project 3 image placeholder",
+      "description": "Project 3 image of mtransport web portal logo",
       "imageUrl": "/mTransport_app_orange.webp",
       "imageHint": "A placeholder image for project 3"
+    },
+    {
+      "id": "project4",
+      "description": "Project 4 image of this portfolio website",
+      "imageUrl": "/portfolio_img.png",
+      "imageHint": "A placeholder image for project 4"
+    },
+        {
+      "id": "project5",
+      "description": "Project 5 image of old portfolio website",
+      "imageUrl": "/old_PF.png",
+      "imageHint": "A placeholder image for project 5"
     }
   ]
 }

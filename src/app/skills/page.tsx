@@ -16,7 +16,7 @@ export default function SkillsPage() {
     {
       title: t.skills.frontend, 
       icon: <Layout className="w-8 h-8 text-secondary" />,
-      skills: ["Angular", "JavaScript", "TypeScript", "React", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"]
+      skills: ["AngularJS", "JavaScript", "TypeScript", "React", "Next.js", "HTML5", "Tailwind CSS", "Bootstrap"]
     },
     {
       title: t.skills.backend,

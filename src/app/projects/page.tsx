@@ -14,12 +14,13 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export default function ProjectsPage() {
   const { t } = useAppContext();
-  const basePath = process.env.NODE_ENV  === 'development' ? '' : '/devPortfolio';
+  const basePath = process.env.NODE_ENV === 'development' ? '' : '/devPortfolio';
   const projectsList = projectsData.projectsList.map(project => ({
     ...project,
-    image: PlaceHolderImages.find(img => img.id === `project${projectsData.projectsList.indexOf(project) + 1}`)?.imageUrl || ""
+    image: PlaceHolderImages.find(img => img.id === `project${projectsData.projectsList.indexOf(project) + 1}`)?.imageUrl || "",
+    description: PlaceHolderImages.find(img => img.id === `project${projectsData.projectsList.indexOf(project) + 1}`)?.description || ""
   }));
-
+  console.log(projectsList);
   return (
     <div className="container mx-auto px-4 py-20">
       <div className="text-center mb-16 max-w-2xl mx-auto">
@@ -35,10 +36,10 @@ export default function ProjectsPage() {
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
                 src={`${basePath}${project.image}`}
-                alt={t.projects[`project${i + 1}desc${i + 1}` as keyof typeof t.projects]}
+                alt={project.description}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
-              priority
+                priority
               />
               <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                 <Link href={project.live} target="_blank" className="p-3 bg-white rounded-full text-primary hover:text-secondary transition-colors">
@@ -89,7 +90,6 @@ export default function ProjectsPage() {
                 ))}
               </div>
             </CardContent>
-
           </Card>
         ))}
       </div>

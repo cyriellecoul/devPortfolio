@@ -3,7 +3,7 @@ interface SVGComponentProps extends React.SVGProps<SVGSVGElement> {}
 
 const AndroidSVG = (props: SVGComponentProps) => (
     <svg
-        fill="#000000"
+       fill="#22c39be6"
         width="800px"
         height="800px"
         viewBox="0 0 24 24"

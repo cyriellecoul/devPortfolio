@@ -45,6 +45,30 @@
       "github": "",
       "android": "",
       "ios": ""
+    },
+    {
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "GitHub Pages"
+      ],
+      "live": "https://cyriellecoul.github.io/devPortfolio/",
+      "github": "https://github.com/cyriellecoul/devPortfolio",
+      "android": "",
+      "ios": ""
+    },
+        {
+      "tags": [
+        "Javascript",
+        "Bootstrap",
+        "HTML",
+        "GitHub Pages"
+      ],
+      "live": "https://cyriellecoul.github.io/PortFolio//",
+      "github": "https://github.com/cyriellecoul/PortFolio",
+      "android": "",
+      "ios": ""
     }
   ]
 }
