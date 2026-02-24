@@ -3,12 +3,12 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, BugPlay, CalendarClock, Code2, Handshake, Lightbulb,Rocket, Smartphone } from "lucide-react";
+import { ArrowRight, BugPlay, CalendarClock, Code2, Handshake, Lightbulb, Rocket, Smartphone, ExternalLink } from "lucide-react";
 import { useAppContext } from "@/context/app-context";
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  const { t } = useAppContext();
+  const { t , lang} = useAppContext();
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTyping, setIsTyping] = useState(true);
@@ -21,7 +21,7 @@ export default function Home() {
 
   useEffect(() => {
     const currentText = accentTexts[currentIndex];
-    
+
     if (isTyping) {
       if (displayText.length < currentText.length) {
         const timeout = setTimeout(() => {
@@ -57,20 +57,20 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-24 md:py-32 flex flex-col items-center text-center">
+      <section className="container mx-auto px-4 py-24 md:pt-32 pb-20 flex flex-col items-center text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xl font-bold uppercase tracking-wider mb-8 animate-in fade-in slide-in-from-bottom-2 duration-700">
           <Rocket className="w-3 h-3" />
           <span>{t.hero.badge}</span>
         </div>
-        
+
         <h1 className="font-headline text-5xl md:text-7xl font-bold text-primary mb-6 max-w-4xl tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-1000">
           {t.hero.titleName}<br />{t.hero.title.length === 0 ? "" : (<>{t.hero.title}<br /></>)}<span className="text-secondary">{displayText}<span className="animate-pulse">|</span></span>
         </h1>
-        
+
         <p className="font-body text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000">
           {t.hero.description1}<strong>{t.hero.description2}</strong>{t.hero.description3}<br />{t.hero.description4}<br /><br /><strong>{t.hero.languagesWebTitle}</strong>{t.hero.languagesWeb}<br /> <strong>{t.hero.languagesMobileTitle}</strong>{t.hero.languagesMobile}
         </p>
-        
+
         <div className="flex flex-col sm:flex-row gap-4 animate-in fade-in slide-in-from-bottom-8 duration-1000">
           <Button asChild size="lg" className="bg-primary text-white h-14 px-8 text-base">
             <Link href="/projects" className="flex items-center gap-2">
@@ -79,6 +79,13 @@ export default function Home() {
           </Button>
           <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/5 h-14 px-8 text-base">
             <Link href="/contact">{t.hero.getInTouch}</Link>
+          </Button>
+        </div>
+        <div className="bg-cardVisible mt-8 p-8 border rounded-3xl text-center max-w-md w-full">
+          <h4 className="font-headline font-bold text-visible mb-2">{t.contact.downloadCv}</h4>
+          <Button asChild variant="visible" className="w-full" >
+            <Link href={`https://cyriellecoul.github.io/MY_CV/?lang=${lang || 'fr'}`} target="_blank">
+              <ExternalLink className="card-visible w-4 h-4 mr-2" />CV intéractif</Link>
           </Button>
         </div>
       </section>

@@ -1,5 +1,5 @@
 
-import type {Config} from 'tailwindcss';
+import type { Config } from 'tailwindcss';
 
 export default {
   darkMode: ['class'],
@@ -21,6 +21,9 @@ export default {
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
+        },
+        cardVisible: {
+          DEFAULT: 'hsl(var(--card-visible))',
         },
         popover: {
           DEFAULT: 'hsl(var(--popover))',
@@ -45,6 +48,9 @@ export default {
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
           foreground: 'hsl(var(--destructive-foreground))',
+        },
+        visible: {
+          DEFAULT: 'hsl(var(--text-visible))',
         },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

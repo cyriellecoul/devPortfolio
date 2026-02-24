@@ -2,12 +2,12 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Linkedin, Download, Github } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Download, Github, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { useAppContext } from "@/context/app-context";
 
 export default function ContactPage() {
-  const { t } = useAppContext();
+  const { t, lang } = useAppContext();
 
   return (
     <div className="container mx-auto px-4 py-20">
@@ -57,7 +57,7 @@ export default function ContactPage() {
             <Link href="https://www.linkedin.com/in/cyrielle-c/" target="_blank" className="p-3 bg-white/10 rounded-xl hover:bg-secondary transition-colors">
               <Linkedin className="w-5 h-5" />
             </Link>
-            <Link href="/CV_Cyrielle.pdf" target="_blank" className="p-3 bg-white/10 rounded-xl hover:bg-secondary transition-colors">
+            <Link href={`/CV_Cyrielle_${lang || 'fr'}.pdf`} target="_blank" className="p-3 bg-white/10 rounded-xl hover:bg-secondary transition-colors">
               <Download className="w-5 h-5" />
             </Link>
             <Link href="https://github.com/cyriellecoul" target="_blank" className="p-3 bg-white/10 rounded-xl hover:bg-secondary transition-colors">
@@ -67,11 +67,13 @@ export default function ContactPage() {
         </div>
         <div className="p-8 bg-card border rounded-3xl text-center max-w-md w-full">
           <h4 className="font-headline font-bold text-primary mb-2">{t.contact.downloadCv}</h4>
-
-          <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary/5" >
-            <Link href="/CV_Cyrielle.pdf" target="_blank">
-              <Download className="w-4 h-4 mr-2" />CV_Cyrielle.pdf</Link>
-          </Button>
+          <div className="bg-cardVisible mt-8 p-8 border rounded-3xl text-center max-w-md w-full">
+            <h4 className="font-headline font-bold text-visible mb-2">{t.contact.downloadCv}</h4>
+            <Button asChild variant="visible" className="w-full" >
+              <Link href={`https://cyriellecoul.github.io/MY_CV/?lang=${lang || 'fr'}`} target="_blank">
+                <ExternalLink className="card-visible w-4 h-4 mr-2" />CV intéractif</Link>
+            </Button>
+          </div>
         </div>
       </div>
     </div>

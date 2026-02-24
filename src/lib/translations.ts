@@ -93,7 +93,8 @@ export const translations = {
       emailMe: "Email Me",
       callMe: "Call Me",
       location: "Location",
-      downloadCv: "Download CV",
+      downloadCv: "Take a look at my interactive CV",
+      interactiveCV: "Interactive CV"
     },
     footer: {
       desc: "Contact me :)",
@@ -193,10 +194,11 @@ export const translations = {
       emailMe: "Email",
       callMe: "Téléphone",
       location: "Localisation",
-      downloadCv: "Télécharger CV",
+      downloadCv: "Jetez un œil à mon CV interactif",
+      interactiveCV: "CV intéractif"
     },
     footer: {
-      desc: "-> Brenda, Chanchan Del Ombre, Cocy, Chabichou :)",
+      desc: "-> Brenda, Chanchan Del Ombre, Chabichou :)",
       rights: "Tous droits réservés."
     },
   }
