@@ -65,15 +65,12 @@ export default function ContactPage() {
             </Link>
           </div>
         </div>
-        <div className="p-8 bg-card border rounded-3xl text-center max-w-md w-full">
-          <h4 className="font-headline font-bold text-primary mb-2">{t.contact.downloadCv}</h4>
-          <div className="bg-cardVisible mt-8 p-8 border rounded-3xl text-center max-w-md w-full">
-            <h4 className="font-headline font-bold text-visible mb-2">{t.contact.downloadCv}</h4>
-            <Button asChild variant="visible" className="w-full" >
-              <Link href={`https://cyriellecoul.github.io/MY_CV/?lang=${lang || 'fr'}`} target="_blank">
-                <ExternalLink className="card-visible w-4 h-4 mr-2" />CV intéractif</Link>
-            </Button>
-          </div>
+        <div className="bg-cardVisible mt-8 p-8 border rounded-3xl text-center max-w-md w-full">
+          <h4 className="font-headline font-bold text-visible mb-2">{t.contact.downloadCv}</h4>
+          <Button asChild variant="visible" className="w-full" >
+            <Link href={`https://cyriellecoul.github.io/MY_CV/?lang=${lang || 'fr'}`} target="_blank">
+              <ExternalLink className="card-visible w-4 h-4 mr-2" />CV intéractif</Link>
+          </Button>
         </div>
       </div>
     </div>
