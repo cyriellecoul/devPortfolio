@@ -64,7 +64,7 @@ export default function Home() {
         </div>
 
         <h1 className="font-headline text-5xl md:text-7xl font-bold text-primary mb-6 max-w-4xl tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-1000">
-          {t.hero.titleName}<br />{t.hero.title.length === 0 ? "" : (<>{t.hero.title}<br /></>)}<span className="text-secondary">{displayText}<span className="animate-pulse">|</span></span>
+          {t.hero.titleName}<br />{t.hero.title.length === 0 ? "" : (<>{t.hero.title}<br /></>)}<span className="text-secondary whitespace-nowrap text-[clamp(1.5rem,5vw,4rem)]">{displayText}<span className="animate-pulse">|</span></span>
         </h1>
 
         <p className="font-body text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000">
