@@ -20,7 +20,7 @@ export default function ProjectsPage() {
     image: PlaceHolderImages.find(img => img.id === `project${projectsData.projectsList.indexOf(project) + 1}`)?.imageUrl || "",
     description: PlaceHolderImages.find(img => img.id === `project${projectsData.projectsList.indexOf(project) + 1}`)?.description || ""
   }));
-  console.log(projectsList);
+
   return (
     <div className="container mx-auto px-4 py-20">
       <div className="text-center mb-16 max-w-2xl mx-auto">
