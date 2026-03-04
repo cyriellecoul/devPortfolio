@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, BugPlay, CalendarClock, Code2, Handshake, Lightbulb, Rocket, Smartphone, ExternalLink } from "lucide-react";
+import { ArrowRight, BugPlay, CalendarClock, Code2, Handshake, Lightbulb, LampWallDownIcon, Smartphone, ExternalLink } from "lucide-react";
 import { useAppContext } from "@/context/app-context";
 import { useState, useEffect } from "react";
 
@@ -57,9 +57,9 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-24 md:pt-32 pb-20 flex flex-col items-center text-center">
+      <section className="container mx-auto px-4 pt-10 pb-20 md:pt-20 flex flex-col items-center text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xl font-bold uppercase tracking-wider mb-8 animate-in fade-in slide-in-from-bottom-2 duration-700">
-          <Rocket className="w-3 h-3" />
+          <LampWallDownIcon className="w-6 h-6" />
           <span>{t.hero.badge}</span>
         </div>
 
@@ -85,7 +85,7 @@ export default function Home() {
           <h4 className="font-headline font-bold text-visible mb-2">{t.contact.downloadCv}</h4>
           <Button asChild variant="visible" className="w-full" >
             <Link href={`https://cyriellecoul.github.io/MY_CV/?lang=${lang || 'fr'}`} target="_blank">
-              <ExternalLink className="card-visible w-4 h-4 mr-2" />CV intéractif</Link>
+              <ExternalLink className="card-visible w-4 h-4 mr-2" />{t.contact.interactiveCV}</Link>
           </Button>
         </div>
       </section>

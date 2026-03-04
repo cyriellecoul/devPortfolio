@@ -46,7 +46,7 @@ export const translations = {
       title: "About me.",
       p1: "My career path is unconventional, marked by experiences in several sectors before I turned to programming. I chose this field for its diversity, its numerous opportunities for growth, and the autonomy it offers.",
       p2: "Sharing knowledge and ideas is central to my approach. With skills in several programming languages, a strong team spirit, and a constant drive to improve, I am confident I can quickly become a versatile asset to your team.",
-      p3: "I am an empathetic and sociable person. What I find most fulfilling in development is the gradual realization of an application and the recognition of users through their feedback.",
+      p3: "I am an involved and sociable person. What I find most fulfilling in development is the gradual realization of an application and the recognition of users through their feedback.",
     },
     projects: {
       title: "Projects",
@@ -93,11 +93,11 @@ export const translations = {
       emailMe: "Email Me",
       callMe: "Call Me",
       location: "Location",
-      downloadCv: "Take a look at my interactive CV",
+      downloadCv: "Take a look at my interactive CV!",
       interactiveCV: "Interactive CV"
     },
     footer: {
-      desc: "Contact me :)",
+      desc: "-> Brenda, Chanchan Del Ombre, Chabichou :)",
       rights: "All rights reserved."
     },
   },
@@ -147,7 +147,7 @@ export const translations = {
       title: "À propos de moi.",
       p1: "Mon parcours est atypique, marqué par des expériences dans plusieurs secteurs avant de me tourner vers la programmation. J’ai choisi ce domaine pour sa diversité, ses nombreuses perspectives d’évolution et l’autonomie qu’il permet.",
       p2: "Le partage de connaissances et d’idées est au cœur de ma démarche. Forte de compétences en plusieurs langages de programmation, d’un solide esprit d’équipe et d’une volonté constante de progresser, je suis convaincue de pouvoir devenir rapidement un atout polyvalent pour votre équipe.",
-      p3: "Je suis une personne empathique et sociable. Ce qui m’épanouit dans le développement, c’est la concrétisation progressive d’une application et la reconnaissance des utilisateur·rice·s à travers leurs retours.",
+      p3: "Je suis une personne impliquée et sociable. Ce qui m’épanouit dans le développement, c’est la concrétisation progressive d’une application et la reconnaissance des utilisateur·rice·s à travers leurs retours.",
     },
     projects: {
       title: "Projets",
@@ -194,8 +194,8 @@ export const translations = {
       emailMe: "Email",
       callMe: "Téléphone",
       location: "Localisation",
-      downloadCv: "Jetez un œil à mon CV interactif",
-      interactiveCV: "CV intéractif"
+      downloadCv: "Jetez un œil à mon CV interactif !",
+      interactiveCV: "CV interactif"
     },
     footer: {
       desc: "-> Brenda, Chanchan Del Ombre, Chabichou :)",

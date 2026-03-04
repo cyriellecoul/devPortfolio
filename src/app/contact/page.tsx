@@ -69,7 +69,7 @@ export default function ContactPage() {
           <h4 className="font-headline font-bold text-visible mb-2">{t.contact.downloadCv}</h4>
           <Button asChild variant="visible" className="w-full" >
             <Link href={`https://cyriellecoul.github.io/MY_CV/?lang=${lang || 'fr'}`} target="_blank">
-              <ExternalLink className="card-visible w-4 h-4 mr-2" />CV intéractif</Link>
+              <ExternalLink className="card-visible w-4 h-4 mr-2" />{t.contact.interactiveCV}</Link>
           </Button>
         </div>
       </div>
