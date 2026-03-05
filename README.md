@@ -67,18 +67,7 @@ http://localhost:3000
 
 ---
 
-## 🚀 Deployment (GitHub Pages)
-
-1. Build the project
-2. Deploy the `out/` folder to the `gh-pages` branch
-   OR configure GitHub Actions for automatic deployment.
-
-Make sure `next.config.ts` includes:
-
-```ts
-output: 'export',
-images: { unoptimized: true }
-```
+## 🚀 Deployment GitHub Pages
 
 ---
 
@@ -131,4 +120,3 @@ Frontend & Mobile Developer
 
 This project is open source and available under the MIT License.
 Improvements Cyrielle Coul
--
