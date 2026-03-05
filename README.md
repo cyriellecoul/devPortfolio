@@ -2,11 +2,16 @@
 
 Built with **TypeScript**, **Next.js**, and **Tailwind CSS**.
 
-**[▶ Live Demo](https://cyriellecoul.github.io/devPortfolio/)**
+**[▶ Live ](https://cyriellecoul.github.io/devPortfolio/)**
 
-<p align="center">
+**[▶ Demo ]**
+<p>Desktop
   <img src="docs/demo_desktop.gif" alt="Portfolio desktop demo" width="480" />
-    <img src="docs/demo_mobile.gif" alt="Portfolio mobile demo" width="480" />
+</p>
+<br/>
+
+<p>Mobile
+  <img src="docs/demo_mobile.gif" alt="Portfolio mobile demo" width="480" />
 </p>
 ---
 
