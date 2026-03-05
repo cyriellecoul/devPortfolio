@@ -1,4 +1,4 @@
-# 🚀 Dev Portfolio
+# 👩‍💻 Dev Portfolio
 
 Built with **TypeScript**, **Next.js**, and **Tailwind CSS**.
 
@@ -15,6 +15,7 @@ Built with **TypeScript**, **Next.js**, and **Tailwind CSS**.
 <p align="center">
   <img src="docs/demo_mobile.gif" alt="Portfolio mobile demo" width="360" />
 </p>
+
 ---
 
 ## 🛠 Tech Stack
