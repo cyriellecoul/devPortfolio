@@ -5,13 +5,15 @@ Built with **TypeScript**, **Next.js**, and **Tailwind CSS**.
 **[▶ Live ](https://cyriellecoul.github.io/devPortfolio/)**
 
 **[▶ Demo ]**
-<p>Desktop
+**[ Desktop ]**
+<p align="center">
   <img src="docs/demo_desktop.gif" alt="Portfolio desktop demo" width="480" />
 </p>
 <br/>
 
-<p>Mobile
-  <img src="docs/demo_mobile.gif" alt="Portfolio mobile demo" width="480" />
+**[ Mobile ]**
+<p align="center">
+  <img src="docs/demo_mobile.gif" alt="Portfolio mobile demo" width="360" />
 </p>
 ---
 
