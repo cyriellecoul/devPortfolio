@@ -1,9 +1,13 @@
 # 🚀 Dev Portfolio
 
-Personal developer portfolio built with **TypeScript**, **Next.js**, and **Tailwind CSS**.
+Built with **TypeScript**, **Next.js**, and **Tailwind CSS**.
 
-Live Demo: https://cyriellecoul.github.io/devPortfolio/
+**[▶ Live Demo](https://cyriellecoul.github.io/devPortfolio/)**
 
+<p align="center">
+  <img src="docs/demo_desktop.gif" alt="Portfolio desktop demo" width="480" />
+    <img src="docs/demo_mobile.gif" alt="Portfolio mobile demo" width="480" />
+</p>
 ---
 
 ## 🛠 Tech Stack
@@ -11,7 +15,7 @@ Live Demo: https://cyriellecoul.github.io/devPortfolio/
 * **Next.js** 
 * **TypeScript**
 * **Tailwind CSS**
-* Deployed on GitHub Pages
+* **Deployed on GitHub Pages**
 
 ---
 
@@ -52,18 +56,6 @@ Open:
 ```
 http://localhost:3000
 ```
-
----
-
-## 🏗 Build for Production
-
-This project uses static export for GitHub Pages.
-
-```bash
-npm run build
-```
-
-The static files will be generated inside the `out/` folder.
 
 ---
 
@@ -130,4 +122,5 @@ Frontend & Mobile Developer
 ## 📄 License
 
 This project is open source and available under the MIT License.
+Improvements Cyrielle Coul
 -
