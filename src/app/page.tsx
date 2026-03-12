@@ -8,7 +8,7 @@ import { useAppContext } from "@/context/app-context";
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  const { t , lang} = useAppContext();
+  const { t, lang } = useAppContext();
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTyping, setIsTyping] = useState(true);
@@ -19,34 +19,35 @@ export default function Home() {
     t.hero.titleAccent3
   ];
 
-  useEffect(() => {
-    const currentText = accentTexts[currentIndex];
+ useEffect(() => {
+  const currentText = accentTexts[currentIndex];
+  const isLastIndex = currentIndex === accentTexts.length - 1;
 
-    if (isTyping) {
-      if (displayText.length < currentText.length) {
-        const timeout = setTimeout(() => {
-          setDisplayText(currentText.slice(0, displayText.length + 1));
-        }, 50);
-        return () => clearTimeout(timeout);
-      } else {
-        const timeout = setTimeout(() => {
-          setIsTyping(false);
-        }, 1000);
-        return () => clearTimeout(timeout);
-      }
+  if (isTyping) {
+    if (displayText.length < currentText.length) {
+      const timeout = setTimeout(() => {
+        setDisplayText(currentText.slice(0, displayText.length + 1));
+      }, 50);
+      return () => clearTimeout(timeout);
     } else {
-      if (displayText.length > 0) {
-        const timeout = setTimeout(() => {
-          setDisplayText(displayText.slice(0, -1));
-        }, 10);
-        return () => clearTimeout(timeout);
-      } else {
-        setCurrentIndex((prev) => (prev + 1) % accentTexts.length);
-        setIsTyping(true);
-      }
-
+      if (isLastIndex) return;
+      const timeout = setTimeout(() => {
+        setIsTyping(false);
+      }, 1000);
+      return () => clearTimeout(timeout);
     }
-  }, [displayText, currentIndex, isTyping, accentTexts]);
+  } else {
+    if (displayText.length > 0) {
+      const timeout = setTimeout(() => {
+        setDisplayText(displayText.slice(0, -1));
+      }, 10);
+      return () => clearTimeout(timeout);
+    } else {
+      setCurrentIndex((prev) => Math.min(prev + 1, accentTexts.length - 1));
+      setIsTyping(true);
+    }
+  }
+}, [displayText, currentIndex, isTyping, accentTexts]);
 
   return (
     <div className="relative overflow-hidden">
@@ -67,9 +68,10 @@ export default function Home() {
           {t.hero.titleName}<br />{t.hero.title.length === 0 ? "" : (<>{t.hero.title}<br /></>)}<span className="text-secondary whitespace-nowrap text-[clamp(1.5rem,5vw,4rem)]">{displayText}<span className="animate-pulse">|</span></span>
         </h1>
 
-        <p className="font-body text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000">
-          {t.hero.description1}<strong>{t.hero.description2}</strong>{t.hero.description3}<br />{t.hero.description4}<br /><br /><strong>{t.hero.languagesWebTitle}</strong>{t.hero.languagesWeb}<br /> <strong>{t.hero.languagesMobileTitle}</strong>{t.hero.languagesMobile}
+        <p className="font-body text-2xl  text-muted-foreground mb-10 max-w-2xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000">
+          {t.hero.description1}<strong>{t.hero.description2}</strong>{t.hero.description3}<br /><br /><strong>{t.hero.languagesWebTitle}</strong>{t.hero.languagesWeb}<br /> <strong>{t.hero.languagesMobileTitle}</strong>{t.hero.languagesMobile}  <strong>{t.hero.DevOpsTitle}</strong>{t.hero.DevOpsSkills}
         </p>
+       
 
         <div className="flex flex-col sm:flex-row gap-4 animate-in fade-in slide-in-from-bottom-8 duration-1000">
           <Button asChild size="lg" className="bg-primary text-white h-14 px-8 text-base">

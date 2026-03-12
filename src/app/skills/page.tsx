@@ -16,17 +16,17 @@ export default function SkillsPage() {
     {
       title: t.skills.frontend, 
       icon: <Layout className="w-8 h-8 text-secondary" />,
-      skills: ["AngularJS", "JavaScript", "TypeScript", "React", "Next.js", "HTML5", "Tailwind CSS", "Bootstrap"]
+      skills: ["Angular", "JavaScript", "TypeScript", "PHP", "React", "Next.js", "HTML5", "Tailwind CSS", "Bootstrap"]
     },
     {
       title: t.skills.backend,
       icon: <Database className="w-8 h-8 text-secondary" />,
-      skills: ["Node.js", "MongoDB", "Firebase", "Docker", "Postman", "Ngrok", "RESTful API", "MySQL"]
+      skills: ["Node.js", "MongoDB", "Firebase", "Docker", "Postman", "Ngrok", "RESTful API", "NoSQL"]
     },
     {
       title: t.skills.tools, 
       icon: <Settings className="w-8 h-8 text-secondary" />,
-      skills: ["Git", "GitHub", "Atlassian (Bitbucket, Jira, Confluence)", "SourceTree", "Figma", "Agile Methodologies (Scrum)",]
+      skills: ["Git", "GitHub", "Atlassian (Bitbucket, Jira, Confluence)", "SourceTree", "Figma", "Agile Methodologies (Scrum)", "Selenium Webdriver"]
     },
 
   ];

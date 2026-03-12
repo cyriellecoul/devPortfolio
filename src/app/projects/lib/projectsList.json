@@ -9,7 +9,19 @@
         "iOS",
         "Android",
         "Android SDK",
-        "Node.js"
+        "Node.js",
+        "Git",
+        "CI/CD with GitHub Actions",
+        "Sentry",
+        "MongoDB",
+        "NoSQL",
+        "REST APIs",
+        "Postman",
+        "Bitbucket",
+        "Confluence",
+        "Jira",
+        "SourceTree",
+        "Docker"
       ],
       "live": "https://www.mtransport.ca/",
       "github": "",
@@ -25,7 +37,19 @@
         "Android Studio",
         "iOS",
         "Android",
-        "Node.js"
+        "Node.js",
+        "Git",
+        "CI/CD with GitHub Actions",
+        "Sentry",
+        "MongoDB",
+        "NoSQL",
+        "REST APIs",
+        "Postman",
+        "Bitbucket",
+        "Confluence",
+        "Jira",
+        "SourceTree",
+        "Docker"
       ],
       "live": "https://www.mtransport.ca/fr/avantages",
       "github": "",
@@ -34,12 +58,24 @@
     },
     {
       "tags": [
-        "AngularJS",
+        "Angular",
         "Javascript",
         "HTML",
         "CSS",
         "Node.js",
-        "API REST"
+        "API REST",
+        "Git",
+        "CI/CD with GitHub Actions",
+        "Sentry",
+        "MongoDB",
+        "NoSQL",
+        "Postman",
+        "Bitbucket",
+        "Confluence",
+        "Jira",
+        "SourceTree",
+        "Ngrok",
+        "Docker"
       ],
       "live": "https://portail.mtransport.ca/#!/",
       "github": "",
@@ -58,12 +94,14 @@
       "android": "",
       "ios": ""
     },
-        {
+    {
       "tags": [
         "Javascript",
         "Bootstrap",
         "HTML",
-        "GitHub Pages"
+        "CI/CD with GitHub Actions",
+        "GitHub Pages",
+        "Git"
       ],
       "live": "https://cyriellecoul.github.io/PortFolio//",
       "github": "https://github.com/cyriellecoul/PortFolio",

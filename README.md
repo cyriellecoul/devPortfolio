@@ -109,7 +109,7 @@ const basePath = process.env.NODE_ENV === 'development' ? '' : '/devPortfolio';
 ## 👤 Author
 
 Cyrielle Coul
-Frontend & Mobile Developer
+Développeuse de logiciels
 
 * GitHub: https://github.com/cyriellecoul
 * LinkedIn: https://www.linkedin.com/in/cyrielle-c/

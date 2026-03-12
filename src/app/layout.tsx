@@ -8,11 +8,11 @@ import { AppContextProvider } from '@/context/app-context';
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cyriellecoul.github.io/devPorfolio"),
-  title: 'Cyrielle | Développeuse Frontend & Mobile',
-  description: 'Portfolio de Cyrielle, Développeuse Front-End en React, JavaScript et TypeScript & Mobile avec une solide expérience en développement natif Android (Java) et iOS (Objective-C), ainsi qu’en React Native. Découvrez mes projets et compétences dans le développement web et mobile.',
+  title: 'Cyrielle | Développeuse de logiciels',
+  description: 'Portfolio de Cyrielle, Développeuse de logiciels avec 5 années d\'expérience en développement. Découvrez mes projets et compétences dans le développement web et mobile.',
   openGraph: {
     title: "Portfolio de Cyrielle",
-    description: "Développeuse Frontend & Mobile",
+    description: "Développeuse de logiciels",
     url: "https://cyriellecoul.github.io/devPorfolio/",
     siteName: "Portfolio de Cyrielle",
     images: [
