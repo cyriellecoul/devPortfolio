@@ -44,16 +44,16 @@ export default function Home() {
         <h1 className="font-headline text-5xl md:text-6xl font-bold text-primary mb-6 max-w-4xl tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-1000">
           {t.hero.titleName}<br /><span className="text-secondary whitespace-nowrap text-[clamp(1.5rem,5vw,4rem)]">{displayText}<span className="animate-pulse">|</span></span>
         </h1>
-
         <p className="font-body text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000">
           {t.hero.description1}<strong>{t.hero.description2}</strong>{t.hero.description3}
         </p>
-
-        <p className="font-body text-2xl text-muted-foreground mb-10 max-w-4xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000">
-         {t.hero.descriptionJob1} <br /><strong>{t.hero.titleJob1}</strong>{t.hero.descriptionJob2}<strong>{t.hero.titleJob2}</strong> {t.hero.descriptionJob3}
+        <p className="font-body text-2xl text-muted-foreground mb-2 max-w-4xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000">
+          {t.hero.descriptionJob1} <br /><strong>{t.hero.titleJob1}</strong>{t.hero.descriptionJob2}<strong>{t.hero.titleJob2}</strong> {t.hero.descriptionJob3}
         </p>
-
-        <p className="font-body text-1xl md:text-1xl text-muted-foreground mb-10 max-w-6xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000">
+        <p className="font-body text-base md:text-xl text-muted-foreground mb-10 max-w-6xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000 italic">
+          <p>{t.hero.personnalText}</p>
+        </p>
+        <p className="font-body text-xl text-muted-foreground mb-10 max-w-6xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000">
           <strong>{t.hero.languagesWebTitle}</strong>{t.hero.languagesWeb}<br /> <strong>{t.hero.languagesMobileTitle}</strong>{t.hero.languagesMobile} <br /> <strong>{t.hero.DevOpsTitle}</strong>{t.hero.DevOpsSkills}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 animate-in fade-in slide-in-from-bottom-8 duration-1000">
