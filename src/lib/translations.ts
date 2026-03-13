@@ -114,7 +114,7 @@ export const translations = {
     },
     hero: {
       badge: "Je m'appelle Cyrielle",
-      titleName: "Je prête à faire partie de",
+      titleName: "Je suis prête à faire partie de",
       titleAccent: "de votre prochain projet numérique.",
       description1: "J'ai ",
       description2: "5 ans d'expérience ",
