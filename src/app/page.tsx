@@ -10,44 +10,22 @@ import { useState, useEffect } from "react";
 export default function Home() {
   const { t, lang } = useAppContext();
   const [displayText, setDisplayText] = useState("");
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isTyping, setIsTyping] = useState(true);
 
-  const accentTexts = [
-    t.hero.titleAccent1,
-    t.hero.titleAccent2,
-    t.hero.titleAccent3
-  ];
+  const accentTexts = t.hero.titleAccent;
 
- useEffect(() => {
-  const currentText = accentTexts[currentIndex];
-  const isLastIndex = currentIndex === accentTexts.length - 1;
+  useEffect(() => {
+    setDisplayText("");
+  }, [accentTexts]);
 
-  if (isTyping) {
-    if (displayText.length < currentText.length) {
+  useEffect(() => {
+    if (displayText.length < accentTexts.length) {
       const timeout = setTimeout(() => {
-        setDisplayText(currentText.slice(0, displayText.length + 1));
+        setDisplayText(accentTexts.slice(0, displayText.length + 1));
       }, 50);
-      return () => clearTimeout(timeout);
-    } else {
-      if (isLastIndex) return;
-      const timeout = setTimeout(() => {
-        setIsTyping(false);
-      }, 1000);
+
       return () => clearTimeout(timeout);
     }
-  } else {
-    if (displayText.length > 0) {
-      const timeout = setTimeout(() => {
-        setDisplayText(displayText.slice(0, -1));
-      }, 10);
-      return () => clearTimeout(timeout);
-    } else {
-      setCurrentIndex((prev) => Math.min(prev + 1, accentTexts.length - 1));
-      setIsTyping(true);
-    }
-  }
-}, [displayText, currentIndex, isTyping, accentTexts]);
+  }, [displayText, accentTexts]);
 
   return (
     <div className="relative overflow-hidden">
@@ -59,20 +37,25 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="container mx-auto px-4 pt-10 pb-20 md:pt-20 flex flex-col items-center text-center">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xl font-bold uppercase tracking-wider mb-8 animate-in fade-in slide-in-from-bottom-2 duration-700">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xl font-bold uppercase tracking-wider mb-10 animate-in fade-in slide-in-from-bottom-2 duration-700">
           <LampWallDownIcon className="w-6 h-6" />
           <span>{t.hero.badge}</span>
         </div>
-
-        <h1 className="font-headline text-5xl md:text-7xl font-bold text-primary mb-6 max-w-4xl tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-1000">
-          {t.hero.titleName}<br />{t.hero.title.length === 0 ? "" : (<>{t.hero.title}<br /></>)}<span className="text-secondary whitespace-nowrap text-[clamp(1.5rem,5vw,4rem)]">{displayText}<span className="animate-pulse">|</span></span>
+        <h1 className="font-headline text-5xl md:text-6xl font-bold text-primary mb-6 max-w-4xl tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-1000">
+          {t.hero.titleName}<br /><span className="text-secondary whitespace-nowrap text-[clamp(1.5rem,5vw,4rem)]">{displayText}<span className="animate-pulse">|</span></span>
         </h1>
 
-        <p className="font-body text-2xl  text-muted-foreground mb-10 max-w-2xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000">
-          {t.hero.description1}<strong>{t.hero.description2}</strong>{t.hero.description3}<br /><br /><strong>{t.hero.languagesWebTitle}</strong>{t.hero.languagesWeb}<br /> <strong>{t.hero.languagesMobileTitle}</strong>{t.hero.languagesMobile}  <strong>{t.hero.DevOpsTitle}</strong>{t.hero.DevOpsSkills}
+        <p className="font-body text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000">
+          {t.hero.description1}<strong>{t.hero.description2}</strong>{t.hero.description3}
         </p>
-       
 
+        <p className="font-body text-2xl text-muted-foreground mb-10 max-w-4xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000">
+         {t.hero.descriptionJob1} <br /><strong>{t.hero.titleJob1}</strong>{t.hero.descriptionJob2}<strong>{t.hero.titleJob2}</strong> {t.hero.descriptionJob3}
+        </p>
+
+        <p className="font-body text-1xl md:text-1xl text-muted-foreground mb-10 max-w-6xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000">
+          <strong>{t.hero.languagesWebTitle}</strong>{t.hero.languagesWeb}<br /> <strong>{t.hero.languagesMobileTitle}</strong>{t.hero.languagesMobile} <br /> <strong>{t.hero.DevOpsTitle}</strong>{t.hero.DevOpsSkills}
+        </p>
         <div className="flex flex-col sm:flex-row gap-4 animate-in fade-in slide-in-from-bottom-8 duration-1000">
           <Button asChild size="lg" className="bg-primary text-white h-14 px-8 text-base">
             <Link href="/projects" className="flex items-center gap-2">
