@@ -19,7 +19,7 @@ export const translations = {
       titleJob1: "Developer",
       titleJob2: "Analyst",
       descriptionJob1: "I am available and open to opportunities as a",
-      descriptionJob2: " Front-End and Mobile or ",
+      descriptionJob2: " Front-End & Mobile and/or ",
       descriptionJob3: " Quality Assurance (QA)",
       personnalText: "(No, I’m not indecisive; I like simply both and enjoy being a multitasker).",
       languagesWebTitle: "FRONT-END: ",
@@ -100,8 +100,8 @@ export const translations = {
       interactiveCV: "Interactive CV"
     },
     footer: {
-      desc: "-> Brenda, Chanchan Del Ombre, Chabichou :)",
-      rights: "All rights reserved."
+      desc: "Made with love in Montreal",
+      rights: "All rights reserved"
     },
   },
   fr: {
@@ -113,17 +113,17 @@ export const translations = {
       contact: "Contact",
     },
     hero: {
-      badge: "Je m'appelle Cyrielle",
+      badge: "Bienvenue ! Je m'appelle Cyrielle",
       titleName: "Je suis prête à faire partie de",
-      titleAccent: "de votre prochain projet numérique.",
+      titleAccent: "votre prochain projet numérique.",
       description1: "J'ai ",
       description2: "5 ans d'expérience ",
       description3: "en développement de logiciels.",
       titleJob1: "Développeuse",
       titleJob2: "Analyste",
       descriptionJob1: "Je suis disponible et ouverte à des opportunités telles que",
-      descriptionJob2: " Front-End et Mobile ou ",
-      descriptionJob3: " en Assurance Qualité (QA).",
+      descriptionJob2: " Front-End & Mobile ou/et ",
+      descriptionJob3: "en Assurance Qualité (QA).",
       personnalText: "(Non, je ne suis pas indécise; j'aime simplement les deux et être une personne multi‑tâches).",
       languagesWebTitle: "FRONT-END : ",
       languagesWeb: "Angular, JavaScript, HTML, CSS, TypeScript, PHP, React, Next.js, Tailwind CSS",
@@ -204,8 +204,8 @@ export const translations = {
       interactiveCV: "CV interactif"
     },
     footer: {
-      desc: "-> Brenda, Chanchan Del Ombre, Chabichou :)",
-      rights: "Tous droits réservés."
+      desc: "Fait avec amour à Montréal",
+      rights: "Tous droits réservés"
     },
   }
 };

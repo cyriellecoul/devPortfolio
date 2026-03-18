@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, BugPlay, CalendarClock, Code2, Handshake, Lightbulb, LampWallDownIcon, Smartphone, ExternalLink } from "lucide-react";
+import { ArrowRight, BugPlay, CalendarClock, Code2, Handshake, Lightbulb, CloudLightning, CloudSun, Smartphone, ExternalLink } from "lucide-react";
 import { useAppContext } from "@/context/app-context";
 import { useState, useEffect } from "react";
 
@@ -38,8 +38,9 @@ export default function Home() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 pt-10 pb-20 md:pt-20 flex flex-col items-center text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xl font-bold uppercase tracking-wider mb-10 animate-in fade-in slide-in-from-bottom-2 duration-700">
-          <LampWallDownIcon className="w-6 h-6" />
+          <CloudLightning className="w-6 h-6" />
           <span>{t.hero.badge}</span>
+          <CloudSun className="w-6 h-6" />
         </div>
         <h1 className="font-headline text-5xl md:text-6xl font-bold text-primary mb-6 max-w-4xl tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-1000">
           {t.hero.titleName}<br /><span className="text-secondary whitespace-nowrap text-[clamp(1.5rem,5vw,4rem)]">{displayText}<span className="animate-pulse">|</span></span>
@@ -47,13 +48,16 @@ export default function Home() {
         <p className="font-body text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000">
           {t.hero.description1}<strong>{t.hero.description2}</strong>{t.hero.description3}
         </p>
+        <p className="font-body text-xl text-muted-foreground mb-2 max-w-4xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000">
+          {t.hero.descriptionJob1} <br />
+        </p>
         <p className="font-body text-2xl text-muted-foreground mb-2 max-w-4xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000">
-          {t.hero.descriptionJob1} <br /><strong>{t.hero.titleJob1}</strong>{t.hero.descriptionJob2}<strong>{t.hero.titleJob2}</strong> {t.hero.descriptionJob3}
+          <strong>{t.hero.titleJob1}</strong>{t.hero.descriptionJob2}<strong>{t.hero.titleJob2}</strong> {t.hero.descriptionJob3}
         </p>
-        <p className="font-body text-base md:text-xl text-muted-foreground mb-10 max-w-6xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000 italic">
-          <p>{t.hero.personnalText}</p>
+        <p className="font-body text-base md:text-sm text-muted-foreground mb-10 max-w-6xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000 italic">
+          {t.hero.personnalText}
         </p>
-        <p className="font-body text-xl text-muted-foreground mb-10 max-w-6xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000">
+        <p className="font-body text-base text-muted-foreground mb-10 max-w-6xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000">
           <strong>{t.hero.languagesWebTitle}</strong>{t.hero.languagesWeb}<br /> <strong>{t.hero.languagesMobileTitle}</strong>{t.hero.languagesMobile} <br /> <strong>{t.hero.DevOpsTitle}</strong>{t.hero.DevOpsSkills}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 animate-in fade-in slide-in-from-bottom-8 duration-1000">
