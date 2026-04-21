@@ -8,11 +8,11 @@ import { AppContextProvider } from '@/context/app-context';
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cyriellecoul.github.io/devPorfolio"),
-  title: 'Cyrielle | Développeuse de logiciels',
-  description: 'Portfolio de Cyrielle, Développeuse de logiciels avec 5 années d\'expérience en développement. Découvrez mes projets et compétences dans le développement web et mobile.',
+  title: 'Cyrielle | Analyste en Assurance Qualité (QA) & Développeuse de logiciels',
+  description: 'Portfolio de Cyrielle, Analyste en Assurance Qualité (QA) & Développeuse de logiciels avec 5 années d\'expérience en développement. Découvrez mes projets et compétences dans le développement web et mobile.',
   openGraph: {
     title: "Portfolio de Cyrielle",
-    description: "Développeuse de logiciels",
+    description: "Analyste en Assurance Qualité (QA) & Développeuse de logiciels",
     url: "https://cyriellecoul.github.io/devPorfolio/",
     siteName: "Portfolio de Cyrielle",
     images: [

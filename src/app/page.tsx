@@ -46,7 +46,7 @@ export default function Home() {
           {t.hero.titleName}<br /><span className="text-secondary whitespace-nowrap text-[clamp(1.5rem,5vw,4rem)]">{displayText}<span className="animate-pulse">|</span></span>
         </h1>
         <p className="font-body text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000">
-          {t.hero.description1}<strong>{t.hero.description2}</strong>{t.hero.description3}
+          {t.hero.description1}<strong>{t.hero.description2}<br /></strong>{t.hero.description3}
         </p>
         <p className="font-body text-xl text-muted-foreground mb-2 max-w-4xl leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-1000">
           {t.hero.descriptionJob1} <br />
